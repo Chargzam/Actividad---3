@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE PIECE: La Película</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.xtrafondos.com/wallpapers/one-piece-artwork-4011.jpg');
+            background-size: cover;
+            background-position: unset;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: linear-gradient(45deg, #f76700, #0800ff);
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        .title-box,
+        .nav-box {
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .title-box {
+            width: 50%;
+        }
+
+        .nav-box {
+            width: 40%;
+            background-image: linear-gradient(45deg, #0777ff, #fc9c00);
+            color: white;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+
+        .page {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .character-box {
+            border: 2px solid #000080;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e6f2ff;
+            display: flex;
+            align-items: center;
+        }
+
+        .character-image {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .character-info {
+            flex: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: rgb(74, 74, 139);
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 800;
+            color: white;
+            position: relative;
+            bottom: 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="title-box">
+                <h1>ONE PIECE: La Película</h1>
+            </div>
+            <div class="nav-box">
+                <nav>
+                    <ul>
+                        <li><a onclick="showPage('inicio')">Inicio</a></li>
+                        <li><a onclick="showPage('personajes')">Personajes</a></li>
+                        <li><a onclick="showPage('trailer')">Trailer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="inicio" class="page">
+            <h2>Bienvenidos a la aventura</h2>
+            <p>Embárcate en el viaje de tu vida con One Piece. La épica serie de anime creada por el renombrado mangaka
+                Eiichiro Oda es un fenómeno global que ha cautivado los corazones de varias generaciones de fanáticos a
+                lo largo de 25 años. Esta emocionante aventura en alta mar está llena de amistad inquebrantable,
+                batallas épicas por la libertad y la búsqueda incesante de sueños. Acompaña a Monkey D. Luffy y su
+                adorable tripulación pirata mientras descubren el verdadero significado del poder y la justicia.</p>
+            <p>Monkey D. Luffy se niega a permitir que nada ni nadie se interponga en su camino para convertirse en el
+                Rey de los Piratas. Con sus poderes otorgados por la sobrenatural Fruta del Diablo, el joven y enérgico
+                pirata busca el tesoro legendario conocido como One Piece. Él trazará un rumbo hacia las traicioneras
+                aguas de Grand Line y reclutará un grupo variopinto para conformar sus Piratas de Sombrero de Paja.
+                ¡Este es un capitán que nunca echará anclas hasta que él y sus amigos alcancen sus sueños!</p>
+            <p>One Piece cuenta con más de 1100 episodios. Actualmente en el arco de Egghead, los Sombrero de Paja por
+                fin conocen al tan esperado Dr. Vegapunk en la Isla Egghead. En Crunchyroll se pueden ver todos los
+                episodios subtitulados y también todos los doblados al inglés, y ya van más de 1000. Además, One Piece
+                cuenta con 13 especiales de televisión y 15 películas, siendo la última, One Piece Film Red, la más
+                taquillera de la franquicia. One Piece está producida por Toei Animation.</p>
+            <img src="https://th.bing.com/th/id/R.d7b67bca3356551887cf8468bb53385b?rik=inossY%2b4THWaCw&pid=ImgRaw&r=0"
+                alt="Póster de ONE PIECE: La Película">
+        </div>
+        <div id="personajes" class="page">
+            <h2>Personajes principales</h2>
+            <div class="character-box">
+                <img src="https://i0.wp.com/pbs.twimg.com/profile_images/682283823116214272/3QsdrEIb_400x400.png?w=980&ssl=1"
+                    alt="Monkey D. Luffy" class="character-image">
+                <div class="character-info">
+                    <h3>Monkey D. Luffy</h3>
+                    <p>Monkey D. Luffy, también conocido como Luffy Sombrero de Paja, es el protagonista principal de la serie de manga
+                        y anime One Piece. Por eso encabeza el listado de personajes de One Piece.</p>
+                    <p>Luffy es un pirata que se convirtió en un hombre de goma tras comer la fruta del diablo Gomu Gomu. Es el fundador
+                        y capitán de los Piratas Sombrero de Paja y además posee varias habilidades que le hacen ser un pirata muy
+                        especial.</p>
+                </div>
+                </div>
+                <div class="character-box">
+                    <img src="https://i.imagesup.co/sz/600x-/images/881869_358_8818695978ad85cfa7a.jpg" alt="Roronoa Zoro"
+                        class="character-image">
+                    <div class="character-info">
+                        <h3>Roronoa Zoro</h3>
+                        <p>Zoro Roronoa o simplemente Zoro, es otro personaje del anime y manga One Piece. Es el segundo capitán y
+                            espadachín de la tripulación de Luffy. Fue el primero en unirse a Luffy después de ser salvado por él. Es
+                            originario del mar del este, y el dojo donde entrenó está en un pueblo llamado Shimotsuki..</p>
+                    </div>
+                </div>
+                <div class="character-box">
+                    <img src="https://i.pinimg.com/originals/7d/2b/c7/7d2bc716536b91f6fb89680946d213b8.jpg" alt="Nami"
+                        class="character-image">
+                    <div class="character-info">
+                        <h3>Nami</h3>
+                        <p>Nami es la navegante de los Piratas del Sombrero de Paja y otro de los principales personajes de One Piece.
+                            Nació en la villa Kokoyashi en el East Blue y es el segundo miembro en unirse a la banda, y el cuarto
+                            oficialmente después de la derrota de Arlong. Durante la Saga de Baratie, traiciona y abandona a la banda,
+                            pero al final de la Saga de Arlong se une oficialmente.</p>
+                    </div>
+                </div>
+                <div class="character-box">
+                    <img src="https://th.bing.com/th/id/OIP.d01-MK1hcdp0zizEy8NqtQHaGk?rs=1&pid=ImgDetMain" alt="Usopp"
+                        class="character-image">
+                    <div class="character-info">
+                        <h3>Usopp</h3>
+                        <p>Es el francotirador de la tripulación. Su sueño es llegar a ser un gran pirata como su padre
+                            Yasopp, tripulante de la banda de piratas de Shanks "el Pelirrojo".</p>
+                    </div>
+                </div>
+                <div class="character-box">
+                    <img src="https://data.topquizz.com/distant/question/big/3/2/2/1/711223_458d28d105.jpg" alt="Sanji"
+                        class="character-image">
+                    <div class="character-info">
+                        <h3>Sanji</h3>
+                        <p>"Pierna Negra" Sanji, nacido como Vinsmoke Sanji, es el cocinero de los Piratas de Sombrero de Paja y uno de
+                            los oficiales superiores de la Gran Flota de Sombrero de Paja. [5] Es el quinto miembro de la tripulación y
+                            el cuarto en unirse, haciéndolo al final del Arco de Baratie.</p>
+                    </div>
+            </div>
+        </div>
+        <div id="trailer" class="page">
+            <h2>Trailer oficial</h2>
+            <p>¡Mira el emocionante trailer de ONE PIECE: La Película!</p>
+            <iframe width="780" height="438" src="https://www.youtube.com/embed/EOWVKVcn_eo"
+                title="One Piece | Avance oficial | Netflix" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe alt="Trailer de ONE PIECE: La Película">
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        showPage('inicio');
+    </script>
+    <section>
+        <footer>
+            <p>DERECHOS RESERVADOS©</p>
+        </footer>
+    </section>
+</body>
+
+</html>
